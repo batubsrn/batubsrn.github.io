@@ -63,7 +63,7 @@
   ============================-->
   <section id="hero">
     <div class="hero-container">
-      <h1>Welcome PokemonGo Counters</h1>
+      <h1>Welcome to Pokemon Go Counters</h1>
       <h2>Easily find out type counters for pokemons and more </h2>
       <a href="#about" class="btn-get-started">Let's find out</a>
     </div>
@@ -87,47 +87,13 @@
             </p>
           </div>
 
+
           <div class="col-lg-6 background order-lg-2 order-1 wow fadeInRight"></div>
         </div>
 
       </div>
     </section><!-- #about -->
-
-    <!--==========================
-      Facts Section
-    ============================-->
-    <!-- <section id="facts">
-      <div class="container wow fadeIn">
-        <div class="section-header">
-          <h3 class="section-title">Facts</h3>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-        </div>
-        <div class="row counters">
-
-  				<div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">232</span>
-            <p>Clients</p>
-  				</div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">521</span>
-            <p>Projects</p>
-  				</div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">1,463</span>
-            <p>Hours Of Support</p>
-  				</div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">15</span>
-            <p>Hard Workers</p>
-  				</div>
-
-  			</div>
-
-      </div>
-    </section> -->
+    
 
     <!--==========================
       Services Section
@@ -140,104 +106,45 @@
         </div>
         <div class="row">    
           
-          <img src="type-img\001.jpg" style="border-radius:50% ;border-style:solid; height:240px;width:240px">
-          <style>
-* {
-  box-sizing: border-box;
-}
+          <img src="pokemon-images\074.jpg" style="border-radius:50% ;border-style:solid; height:240px;width:240px">
+     
 
-body {
-  font: 16px Arial;  
-}
 
-/*the container must be positioned relative:*/
-.autocomplete {
-  position: relative;
-  display: inline-block;
-}
 
-input {
-  border: 1px solid transparent;
-  background-color: #f1f1f1;
-  padding: 10px;
-  font-size: 16px;
-}
-
-input[type=text] {
-  background-color: #f1f1f1;
-  width: 100%;
-}
-
-input[type=submit] {
-  background-color: DodgerBlue;
-  color: #fff;
-  cursor: pointer;
-}
-
-.autocomplete-items {
-  position: absolute;
-  border: 1px solid #d4d4d4;
-  border-bottom: none;
-  border-top: none;
-  z-index: 99;
-  /*position the autocomplete items to be the same width as the container:*/
-  top: 100%;
-  left: 0;
-  right: 0;
-}
-
-.autocomplete-items div {
-  padding: 10px;
-  cursor: pointer;
-  background-color: #fff; 
-  border-bottom: 1px solid #d4d4d4; 
-}
-
-/*when hovering an item:*/
-.autocomplete-items div:hover {
-  background-color: #e9e9e9; 
-}
-
-/*when navigating through the items using the arrow keys:*/
-.autocomplete-active {
-  background-color: DodgerBlue !important; 
-  color: #ffffff; 
-}
-</style>
-
-<body>
-
-<!--Make sure the form has the autocomplete function switched off:-->
+  <!--Make sure the form has the autocomplete function switched off:-->
   <div class="autocomplete" style="width:300px;margin-top:120px;margin-left:40px">
-    <input id="myInput" type="text" name="myCountry" placeholder="search pokemon">
+    <input list="pokemonnames" id="myInput" type="text" name="myCountry" placeholder="search pokemon">
+    <datalist id="pokemonnames">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
   </div>
 
-    <script type="text/javascript">
-      let input = document.getElementById("myInput");
+  <div style="margin-top:120px ">
+    <!-- The text field -->
+    <input type="text" value="@1water,@1Grass,@1Fighting,@1Steel" id="myInput2" style="width:350px;height: 50px;margin-left:20px ">
 
-      function changeCounter(e){
-        const input = e.target;
+    <!-- The button used to copy the text -->
+    <button style="height: 50px" onclick="myFunction()">Copy text</button>
+  </div>      
 
-        var poke=input.value;
-        console.log("changeCounter function here: " + poke);
-    </script>
+     
 
-  }
 
 <div>
-    <img id=counter1 src="type-img\Badge_Type_Bug_01.png" style="border-radius:50% ;border-style:solid; height:120px;width:120px;margin-top:80px;margin-left:100px">
-    <img id=counter2 src="type-img\Badge_Type_Fire_01.png" style="border-radius:50% ;border-style:solid; height:120px;width:120px;margin-top:80px;margin-left:50px">
-    <img id=counter3 src="type-img\Badge_Type_Ice_01.png" style="border-radius:50% ;border-style:solid; height:120px;width:120px;margin-top:80px;margin-left:50px">
-    <img id=counter4 src="type-img\Badge_Type_Bug_01.png" style="border-radius:50% ;border-style:solid; height:120px;width:120px;margin-top:80px;margin-left:50px">
+    <img id=counter1 src="type-img\Badge_Type_Water_01.png" style="border-radius:50% ;border-style:solid; height:120px;width:120px;margin-top:80px;margin-left:100px">
+    <img id=counter2 src="type-img\Badge_Type_Grass_01.png" style="border-radius:50% ;border-style:solid; height:120px;width:120px;margin-top:80px;margin-left:50px">
+    <img id=counter3 src="type-img\Badge_Type_Fighting_01.png" style="border-radius:50% ;border-style:solid; height:120px;width:120px;margin-top:80px;margin-left:50px">
+    <img id=counter4 src="type-img\Badge_Type_Ground_01.png" style="border-radius:50% ;border-style:solid; height:120px;width:120px;margin-top:80px;margin-left:50px">
+    <img id=counter5 src="type-img\Badge_Type_Steel_01.png" style="border-radius:50% ;border-style:solid; height:120px;width:120px;margin-top:80px;margin-left:50px">
 
 </div>
 
 
-<!-- The text field -->
-<input type="text" value="@1fire,@2fire,@1ice,@2ice" id="myInput2" style="width:250px;height: 50px;margin-left:20px ">
 
-<!-- The button used to copy the text -->
-<button style="height: 50px" onclick="myFunction()">Copy text</button>
 <script>
                   function myFunction() {
                     /* Get the text field */
@@ -259,247 +166,13 @@ input[type=submit] {
           
           
           
-          </div>,
+          </div>
         </div>
 
       </div>
     </section><!-- #services -->
 
-    <!--==========================
-    Call To Action Section
-    ============================-->
-    <!-- <section id="call-to-action">
-      <div class="container wow fadeIn">
-        <div class="row">
-          <div class="col-lg-9 text-center text-lg-left">
-            <h3 class="cta-title">Call To Action</h3>
-            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Call To Action</a>
-          </div>
-        </div>
-
-      </div>
-    </section> -->
-
-    <!--==========================
-      Portfolio Section
-    ============================-->
-    <!-- <section id="portfolio">
-      <div class="container wow fadeInUp">
-        <div class="section-header">
-          <h3 class="section-title">Portfolio</h3>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-        </div>
-        <div class="row">
-
-          <div class="col-lg-12">
-            <ul id="portfolio-flters">
-              <li data-filter=".filter-app, .filter-card, .filter-logo, .filter-web" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-logo">Logo</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row" id="portfolio-wrapper">
-          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
-            <a href="">
-              <img src="img/portfolio/app1.jpg" alt="">
-              <div class="details">
-                <h4>App 1</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
-            <a href="">
-              <img src="img/portfolio/web2.jpg" alt="">
-              <div class="details">
-                <h4>Web 2</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
-            <a href="">
-              <img src="img/portfolio/app3.jpg" alt="">
-              <div class="details">
-                <h4>App 3</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
-            <a href="">
-              <img src="img/portfolio/card1.jpg" alt="">
-              <div class="details">
-                <h4>Card 1</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
-            <a href="">
-              <img src="img/portfolio/card2.jpg" alt="">
-              <div class="details">
-                <h4>Card 2</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
-            <a href="">
-              <img src="img/portfolio/web3.jpg" alt="">
-              <div class="details">
-                <h4>Web 3</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
-            <a href="">
-              <img src="img/portfolio/card3.jpg" alt="">
-              <div class="details">
-                <h4>Card 3</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
-            <a href="">
-              <img src="img/portfolio/app2.jpg" alt="">
-              <div class="details">
-                <h4>App 2</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
-            <a href="">
-              <img src="img/portfolio/logo1.jpg" alt="">
-              <div class="details">
-                <h4>Logo 1</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
-            <a href="">
-              <img src="img/portfolio/logo3.jpg" alt="">
-              <div class="details">
-                <h4>Logo 3</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
-            <a href="">
-              <img src="img/portfolio/web1.jpg" alt="">
-              <div class="details">
-                <h4>Web 1</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
-            <a href="">
-              <img src="img/portfolio/logo2.jpg" alt="">
-              <div class="details">
-                <h4>Logo 2</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
-
-        </div>
-
-      </div>
-    </section> -->
-
-    <!--==========================
-      Team Section
-    ============================-->
-    <!-- <section id="team">
-      <div class="container wow fadeInUp">
-        <div class="section-header">
-          <h3 class="section-title">Team</h3>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-        </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/team-1.jpg" alt=""></div>
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
-              <div class="social">
-                <a href=""><i class="fa fa-twitter"></i></a>
-                <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-google-plus"></i></a>
-                <a href=""><i class="fa fa-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/team-2.jpg" alt=""></div>
-              <h4>Sarah Jhinson</h4>
-              <span>Product Manager</span>
-              <div class="social">
-                <a href=""><i class="fa fa-twitter"></i></a>
-                <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-google-plus"></i></a>
-                <a href=""><i class="fa fa-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/team-3.jpg" alt=""></div>
-              <h4>William Anderson</h4>
-              <span>CTO</span>
-              <div class="social">
-                <a href=""><i class="fa fa-twitter"></i></a>
-                <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-google-plus"></i></a>
-                <a href=""><i class="fa fa-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/team-4.jpg" alt=""></div>
-              <h4>Amanda Jepson</h4>
-              <span>Accountant</span>
-              <div class="social">
-                <a href=""><i class="fa fa-twitter"></i></a>
-                <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-google-plus"></i></a>
-                <a href=""><i class="fa fa-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section> -->
+    
 
     <!--==========================
       Contact Section

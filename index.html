@@ -48,9 +48,9 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#hero">Home</a></li>
+          <li class="menu-active"><a href="#services">Home</a></li>
           <li><a href="#about">What and Why?</a></li>
-          <li><a href="#services">Type Counters</a></li>
+          <li><a href="#services">Tournament guide</a></li>
           <li><a href="#portfolio">Upcoming</a></li>          
           <li><a href="#contact">Feedback</a></li>
         </ul>
@@ -61,89 +61,87 @@
   <!--==========================
     Hero Section
   ============================-->
-  <section id="hero">
-    <div class="hero-container">
+    <!--<div class="hero-container">
+        <div>
+            <input list="pokemonnames" id="myInput" type="text" name="myCountry" placeholder="search pokemon">
+            <datalist id="pokemonnames">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+    </datalist>
+            
+        
+        </div>
+        <div>
+        
+        </div>
+        
+        
       <h1>Welcome to Pokemon Go Counters</h1>
       <h2>Easily find out type counters for pokemons and more </h2>
       <a href="#about" class="btn-get-started">Let's find out</a>
     </div>
-  </section><!-- #hero -->
+  </section>--><!-- #hero -->
 
   <main id="main">
 
-    <!--==========================
-      About Us Section
-    ============================-->
-    <section id="about">
-      <div class="container">
-        <div class="row about-container">
-
-          <div class="col-lg-6 content order-lg-1 order-2">
-            <h2 class="title">What & Why?</h2>
-            <p style="color:black;font-size:24px">
-                Siplified interface for Pokemon Type match-ups just type and found out which types are stronger against which. <br><br>
-              
-              Why? Well because as loyal pokemonGo players we got tired of type charts trying to see rows and columns. 
-            </p>
-          </div>
-
-
-          <div class="col-lg-6 background order-lg-2 order-1 wow fadeInRight"></div>
-        </div>
-
-      </div>
-    </section><!-- #about -->
-    
-
-    <!--==========================
+      
+      <!--==========================
       Services Section
     ============================-->
-    <section id="services">
-      <div class="container wow fadeIn">
-        <div class="section-header">
-          <h3 class="section-title">Pokemon Type Counters</h3>
+<section id="services">
+<div class="container wow fadeIn">
+    <div class="section-header">
+          <h3 class="section-title">Pokemon Type Counters</h3>          
+    </div>
           
-        </div>
-        <div class="row">    
+<!--<div class="row">  -->  
           
-          <img src="pokemon-images\074.jpg" style="border-radius:50% ;border-style:solid; height:240px;width:240px">
-     
-
-
-
-  <!--Make sure the form has the autocomplete function switched off:-->
-  <div class="autocomplete" style="width:300px;margin-top:120px;margin-left:40px">
-    <input list="pokemonnames" id="myInput" type="text" name="myCountry" placeholder="search pokemon">
+          
+<div>
+    <img src="pokemon-images\074.jpg" style="border-radius:50% ;border-style:solid; height:240px;width:240px">
+    <input style="height:50px" list="pokemonnames" id="myInput" type="text" name="myCountry" placeholder="search pokemon">
     <datalist id="pokemonnames">
     <option value="Internet Explorer">
     <option value="Firefox">
     <option value="Chrome">
     <option value="Opera">
     <option value="Safari">
-  </datalist>
-  </div>
+    </datalist>
+            
 
-  <div style="margin-top:120px ">
     <!-- The text field -->
     <input type="text" value="@1water,@1Grass,@1Fighting,@1Steel" id="myInput2" style="width:350px;height: 50px;margin-left:20px ">
 
     <!-- The button used to copy the text -->
     <button style="height: 50px" onclick="myFunction()">Copy text</button>
-  </div>      
-
-     
-
+  </div>   
+<script>
+    function gotopokedex(){
+        console.log("podedex"); 
+        var win = window.open(url, '_blank');
+        win.focus();
+    }
+    
+    function openInNewTab(url) {
+        var win = window.open(url, '_blank');
+        win.focus();
+}
+    
+    
+</script>
+    
 
 <div>
-    <img id=counter1 src="type-img\Badge_Type_Water_01.png" style="border-radius:50% ;border-style:solid; height:120px;width:120px;margin-top:80px;margin-left:100px">
+    <img id=counter1 onclick="gotopokedex()" src="type-img\Badge_Type_Water_01.png" style="border-radius:50% ;border-style:solid; height:120px;width:120px;margin-top:80px;margin-left:100px">
     <img id=counter2 src="type-img\Badge_Type_Grass_01.png" style="border-radius:50% ;border-style:solid; height:120px;width:120px;margin-top:80px;margin-left:50px">
     <img id=counter3 src="type-img\Badge_Type_Fighting_01.png" style="border-radius:50% ;border-style:solid; height:120px;width:120px;margin-top:80px;margin-left:50px">
     <img id=counter4 src="type-img\Badge_Type_Ground_01.png" style="border-radius:50% ;border-style:solid; height:120px;width:120px;margin-top:80px;margin-left:50px">
     <img id=counter5 src="type-img\Badge_Type_Steel_01.png" style="border-radius:50% ;border-style:solid; height:120px;width:120px;margin-top:80px;margin-left:50px">
 
 </div>
-
-
 
 <script>
                   function myFunction() {
@@ -172,6 +170,32 @@
       </div>
     </section><!-- #services -->
 
+      
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row about-container">
+
+          <div class="col-lg-6 content order-lg-1 order-2">
+            <h2 class="title">What & Why?</h2>
+            <p style="color:black;font-size:24px">
+                Siplified interface for Pokemon Type match-ups just type and found out which types are stronger against which. <br><br>
+              
+              Why? Well because as loyal pokemonGo players we got tired of type charts trying to see rows and columns. 
+            </p>
+          </div>
+
+
+          <div class="col-lg-6 background order-lg-2 order-1 wow fadeInRight"></div>
+        </div>
+
+      </div>
+    </section><!-- #about -->
+    
+
+    
     
 
     <!--==========================

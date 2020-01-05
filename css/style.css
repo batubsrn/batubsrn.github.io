@@ -730,6 +730,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Portfolio Section
 --------------------------------*/
+#upcoming {
+  width: 100%;
+  height: 100vh;
+  background: url(../background2.png) top center;
+  background-size: cover;
+  position: relative;
+}
 
 #portfolio {
   background: #f7f7f7;
